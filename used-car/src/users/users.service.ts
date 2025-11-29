@@ -12,7 +12,7 @@ export class UsersService {
     const user = this.repo.create({ email, password });
     return this.repo.save(user);
   }
-  4;
+
   findOne(id: number) {
     if (!id) {
       return null;
